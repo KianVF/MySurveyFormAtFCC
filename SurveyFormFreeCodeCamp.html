@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Survey Form</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="SFFCC.css" />
+  </head>
+  <body>
+    <h1 id="title">My Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >Name
+          <input id="name" type="text" required placeholder="Enter your name"
+        /></label>
+        <label id="email-label"
+          >Email
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="Enter your email"
+        /></label>
+        <label id="number-label"
+          >Age
+          <input id="number" type="number" min="10" max="99" placeholder="Age"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label
+          >Which option best describes your current role?
+          <select id="dropdown">
+            <option value="0">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend us?</label>
+        <label><input class="inline" name="recommend" type="radio" />No</label>
+        <label><input class="inline" name="recommend" type="radio" />Yes</label>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved?</label>
+        <label
+          ><input class="inline" value="check1" type="checkbox" />Text based
+          tutorials</label
+        >
+        <label
+          ><input class="inline" value="check2" type="checkbox" />Video based
+          tutorials</label
+        >
+        <label
+          ><input
+            class="inline"
+            value="check3"
+            type="checkbox"
+          />Instructions</label
+        >
+      </fieldset>
+      <fieldset>
+        <label>Any suggestions?</label>
+        <textarea placeholder="Something..."></textarea>
+        <button id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
